@@ -11,6 +11,11 @@
 		09AF88B2279DBCF40099218F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AF88B1279DBCF40099218F /* ContentView.swift */; };
 		09AF88B4279DBCF50099218F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09AF88B3279DBCF50099218F /* Assets.xcassets */; };
 		09AF88B7279DBCF50099218F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09AF88B6279DBCF50099218F /* Preview Assets.xcassets */; };
+		09AF88BE279DBD190099218F /* WordTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AF88BD279DBD190099218F /* WordTile.swift */; };
+		09AF88C0279DC2110099218F /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AF88BF279DC2110099218F /* Tile.swift */; };
+		09AF88C2279DC6350099218F /* TileGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AF88C1279DC6340099218F /* TileGrid.swift */; };
+		09AF88C4279DD32F0099218F /* KeyboardTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AF88C3279DD32F0099218F /* KeyboardTile.swift */; };
+		09AF88C6279DD3920099218F /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AF88C5279DD3920099218F /* Keyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		09AF88B1279DBCF40099218F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		09AF88B3279DBCF50099218F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09AF88B6279DBCF50099218F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		09AF88BD279DBD190099218F /* WordTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTile.swift; sourceTree = "<group>"; };
+		09AF88BF279DC2110099218F /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		09AF88C1279DC6340099218F /* TileGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileGrid.swift; sourceTree = "<group>"; };
+		09AF88C3279DD32F0099218F /* KeyboardTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardTile.swift; sourceTree = "<group>"; };
+		09AF88C5279DD3920099218F /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,11 @@
 				09AF88B1279DBCF40099218F /* ContentView.swift */,
 				09AF88B3279DBCF50099218F /* Assets.xcassets */,
 				09AF88B5279DBCF50099218F /* Preview Content */,
+				09AF88BD279DBD190099218F /* WordTile.swift */,
+				09AF88BF279DC2110099218F /* Tile.swift */,
+				09AF88C1279DC6340099218F /* TileGrid.swift */,
+				09AF88C3279DD32F0099218F /* KeyboardTile.swift */,
+				09AF88C5279DD3920099218F /* Keyboard.swift */,
 			);
 			path = Wordle;
 			sourceTree = "<group>";
@@ -138,7 +153,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				09AF88B2279DBCF40099218F /* ContentView.swift in Sources */,
+				09AF88C2279DC6350099218F /* TileGrid.swift in Sources */,
+				09AF88C6279DD3920099218F /* Keyboard.swift in Sources */,
+				09AF88C4279DD32F0099218F /* KeyboardTile.swift in Sources */,
 				09AF88B0279DBCF40099218F /* WordleApp.swift in Sources */,
+				09AF88BE279DBD190099218F /* WordTile.swift in Sources */,
+				09AF88C0279DC2110099218F /* Tile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
