@@ -18,6 +18,7 @@ struct WordTile: View {
                 .border(.gray, width: 3)
             Text(letter)
                 .font(.system(size: 30))
+                .foregroundColor(.white)
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)
         }

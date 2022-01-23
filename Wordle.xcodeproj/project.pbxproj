@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		098C1D57279DD95D0008618C /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C1D56279DD95D0008618C /* KeyboardView.swift */; };
 		09AF88B0279DBCF40099218F /* WordleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AF88AF279DBCF40099218F /* WordleApp.swift */; };
 		09AF88B2279DBCF40099218F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AF88B1279DBCF40099218F /* ContentView.swift */; };
 		09AF88B4279DBCF50099218F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09AF88B3279DBCF50099218F /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		098C1D56279DD95D0008618C /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		09AF88AC279DBCF40099218F /* Wordle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wordle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09AF88AF279DBCF40099218F /* WordleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleApp.swift; sourceTree = "<group>"; };
 		09AF88B1279DBCF40099218F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				09AF88C1279DC6340099218F /* TileGrid.swift */,
 				09AF88C3279DD32F0099218F /* KeyboardTile.swift */,
 				09AF88C5279DD3920099218F /* Keyboard.swift */,
+				098C1D56279DD95D0008618C /* KeyboardView.swift */,
 			);
 			path = Wordle;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09AF88B2279DBCF40099218F /* ContentView.swift in Sources */,
+				098C1D57279DD95D0008618C /* KeyboardView.swift in Sources */,
 				09AF88C2279DC6350099218F /* TileGrid.swift in Sources */,
 				09AF88C6279DD3920099218F /* Keyboard.swift in Sources */,
 				09AF88C4279DD32F0099218F /* KeyboardTile.swift in Sources */,

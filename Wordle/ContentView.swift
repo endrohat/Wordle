@@ -12,7 +12,11 @@ struct ContentView: View {
         GridItem(.flexible()),
         GridItem(.flexible())
     ]
-    var tilegrid = TileGrid()
+    
+   
+    
+    @StateObject var tilegrid = TileGrid()
+    @StateObject var keyboard = Keyboard()
     @State var text : String = ""
     @State var rowCounter = 0
     var body: some View {
@@ -25,27 +29,14 @@ struct ContentView: View {
                             .frame(height : 50)
                     }
                 }
-                HStack {
-                    Spacer()
-                    TextField("Enter", text: $text)
-                        .multilineTextAlignment(.center)
-                        .onReceive(Just( text) ) {
-                            print($0) // You can do anything due to the change here.
-                            // self.autocomplete($0) // like this
-                            if $0.count == 5 {
-                                var tiles : [Tile] = []
-                                for char in $0 {
-                                    let tile : Tile = Tile (tileState: .notPresent(Color.green), letter: "\(char)")
-                                    tiles.append(tile)
-                                }
-                                tilegrid.tiles[rowCounter] = tiles
-                                rowCounter = rowCounter + 1
-                            }
-                           
-                        }
-                    Spacer()
-                }
-                
+ 
+                KeyboardView()
+                    .onTapGesture {
+                      print("tap")
+                    }
+            
+              
+               
             }
            
         }
@@ -65,6 +56,8 @@ struct ContentView: View {
         }
         return bgcolor
     }
+    
+
 }
 
 struct ContentView_Previews: PreviewProvider {
