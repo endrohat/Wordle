@@ -15,7 +15,7 @@ class TileGrid : ObservableObject {
         for _ in 1...5 {
             var tileRow : [Tile] = []
             for _ in 1...5 {
-                tileRow.append(Tile(tileState: .empty(Color.gray), letter: "A"))
+                tileRow.append(Tile(tileState: .empty(Color.white), letter: ""))
             }
             tiles.append(tileRow)
         }

@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 enum TileState : Hashable {
+    case letterFilled (Color)
     case empty (Color)
     case notPresent (Color)
     case presentIncorrectPosition (Color)
@@ -16,6 +17,6 @@ enum TileState : Hashable {
 struct Tile : Identifiable, Hashable, Equatable {
 
     var id = UUID()
-    var tileState : TileState = .empty(Color.gray)
+    var tileState : TileState = .empty(Color.white)
     var letter = ""
 }

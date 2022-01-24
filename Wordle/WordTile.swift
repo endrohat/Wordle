@@ -10,15 +10,16 @@ import SwiftUI
 struct WordTile: View {
     var bgColor : Color
     var letter : String
-    
+    var foregroundColor = Color.white
+    var font : CGFloat = 30
     var body: some View {
         ZStack {
             Rectangle()
                 .fill(bgColor)
                 .border(.gray, width: 3)
             Text(letter)
-                .font(.system(size: 30))
-                .foregroundColor(.white)
+                .font(.system(size: font))
+                .foregroundColor(foregroundColor)
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)
         }

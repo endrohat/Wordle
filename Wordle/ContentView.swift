@@ -13,33 +13,32 @@ struct ContentView: View {
         GridItem(.flexible())
     ]
     
-   
-    
     @StateObject var tilegrid = TileGrid()
     @StateObject var keyboard = Keyboard()
     @State var text : String = ""
     @State var rowCounter = 0
+    
     var body: some View {
         let tileList : [Tile] = tilegrid.tiles.flatMap({$0})
-        ScrollView {
+   
             VStack {
+                Spacer()
+                Spacer()
+                Spacer()
                 LazyVGrid(columns: gridItemLayout, spacing: 7) {
                     ForEach(tileList, id: \.self) {tile in
                         WordTile(bgColor: getBgColor(tileState: tile.tileState), letter: tile.letter)
                             .frame(height : 50)
                     }
-                }
- 
-                KeyboardView()
-                    .onTapGesture {
-                      print("tap")
-                    }
-            
-              
-               
+                }.padding()
+                Spacer()
+                Spacer()
+                Spacer()
+                KeyboardView(tileGrid : tilegrid)
+             
             }
            
-        }
+        
     }
     
     func getBgColor(tileState : TileState) -> Color {
@@ -52,6 +51,8 @@ struct ContentView: View {
         case .presentIncorrectPosition(let color):
             bgcolor = color
         case .presentCorrectPosition(let color):
+            bgcolor = color
+        case .letterFilled(let color):
             bgcolor = color
         }
         return bgcolor

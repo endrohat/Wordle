@@ -15,6 +15,6 @@ enum KeyboardTileState : Hashable {
 struct KeyboardTile : Identifiable, Hashable, Equatable {
 
     var id = UUID()
-    var tileState : KeyboardTileState = .normal(Color.gray)
+    var tileState : KeyboardTileState = .normal(Color.init(red: 0.83, green: 0.83, blue: 0.83))
     var letter = ""
 }
