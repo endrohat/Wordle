@@ -9,9 +9,9 @@ import Foundation
 import SwiftUI
 class Keyboard : ObservableObject {
     
-    var firstRow: [KeyboardTile] = []
-    var secondRow: [KeyboardTile] = []
-    var thirdRow: [KeyboardTile] = []
+    @Published var firstRow: [KeyboardTile] = []
+    @Published var secondRow: [KeyboardTile] = []
+    @Published var thirdRow: [KeyboardTile] = []
     
     init() {
         firstRow.append(KeyboardTile( letter: "Q"))

@@ -17,6 +17,7 @@ struct ContentView: View {
     @StateObject var keyboard = Keyboard()
     @State var text : String = ""
     @State var rowCounter = 0
+    var dataProcessor = DataProcessor()
     
     var body: some View {
         let tileList : [Tile] = tilegrid.tiles.flatMap({$0})
@@ -34,7 +35,7 @@ struct ContentView: View {
                 Spacer()
                 Spacer()
                 Spacer()
-                KeyboardView(tileGrid : tilegrid)
+                KeyboardView(tileGrid : tilegrid, dataProcessor: dataProcessor)
              
             }
            
